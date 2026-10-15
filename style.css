@@ -1,0 +1,98 @@
+/* Thiết lập toàn trang */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 40px 20px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+code {
+    background-color: #e2e8f0;
+    color: #d946ef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
+
+/* Khung hiển thị các thẻ */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* ========================================================
+   CÁC QUY TẮC CSS CHO THẺ CARD THEO YÊU CẦU ĐỀ BÀI
+   ======================================================== */
+
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db; /* Màu xanh dương */
+    margin: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    font-size: 13px;
+    margin-bottom: 4px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Thẻ 1: box-sizing: content-box; background-color: #2ecc71 (Xanh lá cây) */
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+/* Thẻ 2: box-sizing: border-box; background-color: #f1c40f (Vàng) */
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+    color: #1e293b; /* Đổi màu chữ cho dễ đọc trên nền vàng */
+}
+.card:nth-child(2) h3, .card:nth-child(2) p {
+    text-shadow: none;
+}
+
+/* Thẻ 3: box-sizing: border-box; background-color: #e74c3c (Đỏ) */
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}

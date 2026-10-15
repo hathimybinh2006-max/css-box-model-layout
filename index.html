@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng bố cục với Mô hình hộp CSS (Box Model)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thực Hành Mô Hình Hộp CSS (Box Model & Box-Sizing)</h1>
+        <p class="subtitle">So sánh sự khác biệt giữa <code>content-box</code> và <code>border-box</code></p>
+
+        <div class="cards-wrapper">
+            <!-- Thẻ 1: content-box -->
+            <div class="card">
+                <h3>Thẻ 1: Content-box</h3>
+                <p><strong>box-sizing: content-box</strong></p>
+                <p>Tổng kích thước hiển thị thực tế: <strong>330px &times; 200px</strong> (Khai báo 280 &times; 150 + Padding 20 + Border 5 mỗi bên).</p>
+            </div>
+
+            <!-- Thẻ 2: border-box -->
+            <div class="card">
+                <h3>Thẻ 2: Border-box</h3>
+                <p><strong>box-sizing: border-box</strong></p>
+                <p>Tổng kích thước hiển thị thực tế: <strong>280px &times; 150px</strong> (Padding và border được tính gộp vào trong kích thước).</p>
+            </div>
+
+            <!-- Thẻ 3: border-box -->
+            <div class="card">
+                <h3>Thẻ 3: Border-box</h3>
+                <p><strong>box-sizing: border-box</strong></p>
+                <p>Tổng kích thước hiển thị thực tế: <strong>280px &times; 150px</strong> (Giúp kiểm soát kích thước bố cục chính xác và dễ dàng hơn).</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
